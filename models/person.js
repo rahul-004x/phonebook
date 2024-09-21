@@ -25,7 +25,7 @@ const personSchema = new mongoose.Schema({
     minLength: 3
   },
   number: {
-    type: String,  // Change to String to handle formats like '09-1234556'
+    type: String,  
     required: true,
     validate: {
       validator: function(v) {
